@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: es
+demo:
+  username: pushkar_YML #two spaces for each prop of sub props/obj(s)
+  password: somepassword
+  url: somedburl
+  jms:
+    username: jmsYMLdemo
+    password: jmspass
+    url: jmsurl
+#application yml file is read by spring boot to supply any prop being used througout the project. Thus no need to create
+#separate custom prop files. ex. datasource.prop,fakejmssourceprop.
+--- #file separater 3 "-"'s
+spring: 
+  profiles: es
+demo:
+  username: pushkar_+++++ #two spaces for each prop of sub props/obj(s)
