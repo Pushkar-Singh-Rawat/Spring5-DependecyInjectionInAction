@@ -22,7 +22,7 @@ public class GreetingServiceConfig {
 	
 	@Bean
 	@Primary
-	@Profile({"default","en"})
+	@Profile({/*"default",*/"en"})
 	public GreetingService primaryEnglishGreetingService(GreetingServiceFactory greetingServiceFactory) {
 		return greetingServiceFactory.createGreetingService("en");
 	}
